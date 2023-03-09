@@ -1,0 +1,33 @@
+{
+  "name": "restapisnode",
+  "version": "1.0.0",
+  "description": "Aprendiendo a crear RestApis",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielMorales7/restapis.git"
+  },
+  "keywords": [
+    "restapis"
+  ],
+  "author": "Jose Daniel Morales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielMorales7/restapis/issues"
+  },
+  "homepage": "https://github.com/DanielMorales7/restapis#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.10.0",
+    "multer": "^1.4.5-lts.1",
+    "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

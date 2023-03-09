@@ -42,7 +42,7 @@ router.route('/productos')
 router.route('/producto/:id')
     .get(showProductById)
     .put(uploadFile, updateProduct)
-    .delete(deleteProduct)
+    .delete(deleteProduct) 
 
 
 export default router

@@ -7,7 +7,7 @@ const pedidosSchema = new mongoose.Schema({
         type: Schema.ObjectId,
         ref: 'ClientesModel'
     },
-    productos:[{
+    pedido:[{
         producto:{
             type:Schema.ObjectId,
             ref: 'ProductosModel'

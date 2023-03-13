@@ -16,6 +16,15 @@ import {
     deleteProduct
 }
 from '../controllers/productosController.js'
+
+import {
+    newOrder, 
+    showOrders,
+    get_orderById,
+    put_updateOrder,
+    delete_order
+}
+from '../controllers/pedidosController.js'
 const router = express.Router();
 
 /** CLIENTES **/
@@ -44,5 +53,14 @@ router.route('/producto/:id')
     .put(uploadFile, updateProduct)
     .delete(deleteProduct) 
 
+/***** Pedidos *****/
+router.route('/orders')
+    .post(newOrder)
+    .get(showOrders)
+
+router.route('/order/:id')
+    .get(get_orderById)
+    .put(put_updateOrder)
+    .delete(delete_order)
 
 export default router
